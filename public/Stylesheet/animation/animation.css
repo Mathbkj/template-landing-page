@@ -1,0 +1,117 @@
+@keyframes page-slide {
+  from {
+    transform: translateX(-100px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(1px);
+    opacity: 100%;
+  }
+}
+@keyframes page-slide-reverse {
+  to {
+    transform: translateX(-100px);
+    opacity: 0%;
+  }
+}
+@keyframes page-up{
+  from{
+    transform: translateY(-100px);
+  }
+  to{
+    transform:translateY(22px);
+  }
+}
+@keyframes alternate-page-up{
+  from{
+    transform:translate()
+  }
+}
+@keyframes ringing {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes graph-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2px);
+  }
+}
+
+.animate-slide-down {
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+.animate-slide-down:hover {
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+.animate-slide-right {
+  transform: translateX(10px);
+  transition: all 1s ease;
+}
+.page-slide {
+  animation-name: page-slide;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+.alternate-page-slide {
+  animation-name: page-slide-reverse;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+.page-slide-up{
+  animation-name:page-up;
+  animation-duration:1s;
+  animation-timing-function:ease;
+  animation-fill-mode:forwards;
+  animation-direction:normal;
+}
+.phone-hover:hover {
+  animation-iteration-count: infinite;
+  animation-name: ringing;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+.up-hover:hover {
+  animation-iteration-count: infinite;
+  animation-name: up;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
+.graph-animate {
+  animation-name: graph-up;
+  animation-duration:2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+}
